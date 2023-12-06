@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+.contact {
+    background: linear-gradient(to left bottom , #f5f6fa 80%, #ffffff 20%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contact h1{
+    margin: 0 auto;
+    color:#000;
+    margin-top: 40px;
+    animation: faseIn 1s ease-in-out;
+    font-family: 'Pacifico', cursive;
+  }
+  @keyframes faseIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .coul{
+    width: 30px;
+    height: 2px;
+    background-color: grey;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+.contact-sec{
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.vl{
+    width: 2px;
+    height: 200px;
+    background-color: lightgrey;
+}
+.contact-sec h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.contact .contact-sec .consec2 .te{
+    color: rgb(10, 143, 98);
+    font-style: italic;
+}
+h6{
+    text-align: center;
+}
+@media (max-width:576px){
+  .contact-sec {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+}
+.app{
+  transition: padding-top 0.3s ease;
+}
+.app .about-first {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #f5f6fa;
+}
+.app .about-first .about-profile {
+  display: flex;
+  gap: 10px;
+  color: black;
+}
+.app .about-first .about-profile h5{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.app .about-first .about-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 30px;
+  margin-right: 40px;
+}
+.app .about-first .about-nav ul li {
+  display: flex;
+  align-items: center;
+  color:rgb(3, 69, 3);
+  font-size: 20px;
+}
+
+.app .about-nav a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.app .about-first .about-nav ul li:hover{
+  color:#ff7b2c;
+  cursor: pointer;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: #f2f2f2; */
+  z-index: 999;
+}
+

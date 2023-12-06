@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #f5f6fa;
+  }
+  
+  .home h1 {
+    margin: 0 auto;
+    color:#000;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Pacifico', cursive;
+  }
+  @keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+  }
+  .abul{
+    width: 30px;
+    height: 2px;
+    background-color: grey;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  .home .home-sec h1 {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block; /* Add this line */
+  }
+  
+  .home .home-sec .des2 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 100px;
+    width: 400px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .home .home-sec h2{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 30px;
+    color: rgb(3, 69, 3);
+    text-align: left;
+  }
+  
+  .home .home-sec p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+    color: rgb(3, 69, 3);
+    text-align: left;
+    padding-left: 100px;
+    width: 400px;
+  }
+  
+  .home .home-pic {
+    width: 300px;
+    height: 300px;
+    border: hidden;
+    border-radius: 30px;
+    margin-top: 100px;
+    background-image: url('../assets/Untitled\ design.jpg'), linear-gradient(#f5f6fa, #f5f6fa);
+    background-size: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .home .home-sec .des2,
+    .home .home-sec p {
+    padding-left: 20px;
+    width: 100%;
+  }
+  }
+  
+  @media (max-width: 576px) {
+    .home .home-sec .des2,
+    .home .home-sec p {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  }

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .porto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #7d7d7e 60%, #ffffff 40%);
+  }
+  .porto h1{
+    margin: 0 auto;
+    color:#000;
+    margin-top: 40px;
+    animation: faseIn 1s ease-in-out;
+    font-family:'Times New Roman', Times, serif;
+  }
+  @keyframes faseIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .poul{
+    width: 30px;
+    height: 2px;
+    background-color: grey;
+    border-radius:2px ;
+    margin: 0 auto;
+  }
+  .porto p{
+    width: 600px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+    margin-left:60px ;
+    font-family: 'Poppins', sans-serif;
+  }
+  .porto .goce{
+    margin-left: 200px;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+.porto .porto-sec-1{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-right: 60px;
+}
+.porto .porto-sec-1 .ec{
+    width: 500px;
+    height: 500px;
+    background-image: url('../assets/ecom.jpg');
+    background-size: cover;
+    border: hidden;
+    -webkit-border-radius: 30px;
+    -webkit-border-top-right-radius: 100px;
+    -webkit-border-bottom-left-radius: 100px;
+    -moz-border-radius: 30px;
+    -moz-border-radius-topright: 100px;
+    -moz-border-radius-bottomleft: 100px;
+    border-radius: 30px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-bottom: 30px;
+}
+.porto .porto-sec-2{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-left:60px;
+}
+.porto .porto-sec-2 .reci{
+    width: 600px;
+    height: 400px;
+    background-image: url('../assets/recipe.jpg');
+    background-size: cover;
+    border: hidden;
+    margin-bottom: 30px;
+    border-radius: 124px 200px 133px 200px;
+    -moz-border-radius: 124px 200px 133px 200px;
+    -webkit-border-radius: 124px 200px 133px 200px;
+    border: 0px solid #000000;
+}
+.porto .porto-sec-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-left:60px;
+}
+.porto .porto-sec-3 .snap{
+    width: 500px;
+    height: 500px;
+    background-image: url('../assets/Screenshot\ 2023-06-07\ 181142.png'), linear-gradient(#fff,#fff);
+    background-size: cover;
+    margin-bottom: 30px;
+    border-radius: 0px 200px 133px 200px;
+    -moz-border-radius: 0px 200px 133px 200px;
+    -webkit-border-radius: 0px 200px 133px 200px;
+    border: 0px solid #000000;
+}
+.porto .porto-sec-3 p{
+  margin-left: 350px;
+}
+ a{
+    text-decoration: none;
+    color: rgb(25, 198, 25);
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    animation: scr 3s infinite;
+}
+@keyframes scr{
+    0%{
+        left: -100%;
+    }
+    50%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media (max-width:576px){
+    .porto .porto-sec-1,
+    .porto .porto-sec-2,
+    .porto .porto-sec-3 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}
